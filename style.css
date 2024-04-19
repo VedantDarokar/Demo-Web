@@ -20,6 +20,8 @@
   color: white;
   margin-left: 60px;
   width: 30%;
+  animation: slideleft 1s ease forwards;
+  opacity: 0;
 }
 
 .menubar {
@@ -34,6 +36,10 @@
   font-size: 18px;
   text-decoration: none;
   font-weight: bolder;
+  transition: 0.3s all;
+  animation: navmenu 1s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
+  opacity: 0;
 }
 /* <<--header-end-->> */
 
@@ -63,6 +69,9 @@ img {
   width: 500px;
   margin-left: 50px;
   margin-top: 100px;
+  transition: 0.3ms;
+  animation: slideright1 2s ease forwards;
+  opacity: 0;
 }
 
 .left h1 {
@@ -72,6 +81,9 @@ img {
   margin-top: -150px;
   color: rgb(0, 0, 53);
   text-shadow: 0 0 10px aqua;
+  animation: slideright 1.5s ease forwards;
+  opacity: 0;
+
 }
 
 .left input {
@@ -88,7 +100,10 @@ img {
   font-size: 30px;
   text-align: center;
 }
-
+.scerchbar{
+  animation: slideright 2s ease forwards;
+  opacity: 0;
+}
 .buttons {
   display: flex;
   justify-content: space-around;
@@ -108,11 +123,71 @@ button{
 }
 .btn1{
   margin-left: -120px;
+  animation: slideup 1s    ease-in forwards;
 }
 .btn2{
   margin-left: -300px;
+  animation: slideup 1s    ease-in forwards;
 }
 button a{
   text-decoration: none;
   color: white;
 }
+
+/* <!--animation--> */
+
+@keyframes slideleft {
+  0%{
+      transform: translateX(-100px);
+      opacity: 0;
+  }
+  100%{
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes navmenu {
+  0%{
+      transform: translateY(100px);
+      opacity: 0;
+  }
+  100%{
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideright {
+  0%{
+      transform: translateX(-400px);
+      opacity: 0;
+  }
+  100%{
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideright1 {
+  0%{
+      transform: translateX(400px);
+      opacity: 0;
+  }
+  100%{
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+
+@keyframes slideup {
+  0%{
+      transform: translateY(100px);
+      opacity: 0;
+  }
+  100%{
+      transform: translateY(0);
+      opacity: 1;
+  }
+} 
