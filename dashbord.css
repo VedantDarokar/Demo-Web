@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+    box-sizing: border-box;
+}
+
+
+/* <--header start--> */
+.navbar {
+    height: 80px;
+    background-image: linear-gradient(to right, rgb(0, 0, 50), aqua);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+  }
+  
+  .logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    margin-left: 60px;
+    width: 30%;
+  }
+  
+  .menubar {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .menubar a {
+    color: rgb(0, 6, 39);
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+  .navbar i{
+    margin-right: 5px;
+    font-size: 20px;
+  }
+  /* <<--header-end-->> */
+
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: #d1d1d1;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./assets/upload-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card{
+    width: 90%;
+    background: #ffffff3c;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    color: #333;
+    margin-top: 100px;
+    border: 2px dashed grey;
+}
+.card p{
+    font-size: 30px;
+}
+.card h1{
+   font-weight: 500;
+   color: #000;
+}
+.card img{
+    width: 30%;
+    height:250px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    border: none;
+}
+label{
+    display: block;
+    width: 200px;
+    background-image: linear-gradient(to right, rgb(0, 0, 50), aqua);
+    color: #fff;
+    padding: 12px;
+    margin: 10px auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input{
+    display: none;
+}

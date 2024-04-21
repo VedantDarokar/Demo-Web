@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title> 
+    <link rel="stylesheet" href="./dashbord.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="navbar">
+          <div class="logo"><a href="http://127.0.0.1:5501/index.html" style="text-decoration: none ; color: white;">Logo</a></div>
+          <div class="menubar">
+            <a href="#" class="home"><i class="fa-solid fa-user"></i>User1</a>
+            <a href="./index.html" class="home">Home</a>
+            <a href="#" class="home">Feature</a>
+            <a href="#" class="home">Download</a>
+            <a href="#" class="home">About</a>
+          </div>
+        </div>
+      </header>
+    <div class="hero">
+        <div class="card">
+            <p>Select to Drop a Image</p>
+            <img src="./assets/upload.png"  id="profile-pic">
+            <label for="input-file">Upload image</label>
+            <input type="file" accept="image/jpeg , image/png, image/jpg" id="input-file">
+        </div>
+    </div>
+</body>
+<script src="./dashboard.js"></script>
+</html>
