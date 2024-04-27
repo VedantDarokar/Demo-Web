@@ -19,7 +19,6 @@
   font-weight: 700;
   color: white;
   margin-left: 60px;
-  width: 30%;
   animation: slideleft 1s ease forwards;
   opacity: 0;
 }
