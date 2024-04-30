@@ -91,34 +91,52 @@ a{
     color: white;
     text-decoration: none;
 }
-@media(max-width : 500px){
-  .navbar{
-    height: 100px;
-    display:flex;
-    flex-direction: column;
-    animation: none;
-    opacity: 1;
-  }
-  .logo{
-    font-size: 40px;
-    text-align: center;
-    animation: none;
-    opacity: 1;
-  }
-  .menubar{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    text-shadow: (0px 0px 10px white);
-    animation: none;
-    margin-left: 5px;
-    margin-top: -15px;
-  }
-  .menubar a{
-    animation: none;
-    opacity: 1;
-    width: 100%;
-  }
+  @media(max-width:450px) {
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: poppins;
+    }
+    /* <--header start--> */
+    .navbar {
+      height: 120px;
+      background-image: linear-gradient(to right, rgb(0, 0, 50), aqua);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      flex-direction: column;
+    }
+    
+    .logo {
+      font-size: 40px;
+      font-weight: 700;
+      color: white;
+      margin-left: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 1;
+      animation: none;
+    }
+    
+    .menubar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: -10px;
+    }
+    
+    .menubar a {
+      color: rgb(0, 6, 39);
+      font-size: 20px;
+      text-decoration: none;
+      font-weight: bolder;
+      opacity: 1;
+      margin-left: 10px;
+      margin-top: -40px;
+      animation: none;
+    }
   body{
     width: 100%;
     margin-top: -20px;
@@ -134,8 +152,10 @@ a{
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.666);
     margin-top: 0px;
-    margin-left: 50px;
+    margin-left: 20px;
   }
-  
+  .footer{
+    height: 100px;
+  }
 }
 

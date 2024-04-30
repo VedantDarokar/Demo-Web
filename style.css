@@ -189,99 +189,149 @@ button a{
       opacity: 1;
   }
 } 
-@media(max-width : 500px){
-  .navbar{
-    height: 100px;
-    display:flex;
-    flex-direction: column;
-    animation: none;
-    opacity: 1;
+@media(max-width:450px) {
+  * {
+    padding: 0;
+    margin: 0;
+    font-family: poppins;
   }
-  .logo{
+  /* <--header start--> */
+  .navbar {
+    height: 120px;
+    background-image: linear-gradient(to right, rgb(0, 0, 50), aqua);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .logo {
     font-size: 40px;
-    text-align: center;
-    animation: none;
-    opacity: 1;
-  }
-  .menubar{
-    width: 100%;
+    font-weight: 700;
+    color: white;
+    margin-left: 60px;
     display: flex;
-    justify-content: space-evenly;
-    padding: 20px;
-    text-shadow: (0px 0px 10px white);
-    animation: none;
-    margin-top: -15px;
-  }
-  .menubar a{
-    animation: none;
+    justify-content: center;
+    align-items: center;
     opacity: 1;
-    width: 100%;
+    animation: none;
   }
-  .Landing-page{
-    width: 100%;
+  
+  .menubar {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10px;
+  }
+  
+  .menubar a {
+    color: rgb(0, 6, 39);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bolder;
+    opacity: 1;
+    margin-left: 10px;
+    margin-top: -40px;
+    animation: none;
+  }
+  /* <<--header-end-->> */
+  
+  /* <--hero-section start--> */
+  .Landing-page {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 1700px;
     flex-direction: column;
   }
-  .right{
-    height: 500px;
+  
+  .left {
+    width: 100%;
+    margin-left: -50px;
+    margin-top: 200px;
   }
-  img{
-    margin: 200px;
+  
+  .right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  img {
+    width: 100%;
+    margin-left: 00px;
+    margin-top: -300px;
+    transition: 0.3ms;
     animation: none;
     opacity: 1;
   }
-  .left{
-    width: 100%;
-  }
+  
   .left h1 {
-    font-size: 70px;
+    width: 100%;
+    font-size: 60px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: -20px;
-    margin-top: -200px;
+    margin-left: 20px;
+    margin-top: -900px;
+    text-align: center;
     color: rgb(0, 0, 53);
     text-shadow: 0 0 10px aqua;
     animation: none;
     opacity: 1;
-    text-align: center;
-    width: 100%;
+  
   }
+  
   .left input {
-    text-align: center;
     width: 300px;
     height: 35px;
     border-radius: 15px;
     border: none;
     border: 2px rgb(0, 10, 35) solid;
     font-size: 15px;
-    margin-left: 0px;
-    margin-top: 0px;
-
-  }
-  .scerchbar{
-    animation: none;
-    opacity: 1;
-    margin-left: -30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-left: 90px;
+    margin-top: 50px;
   }
   .left i{
-    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
   }
-  .button{
-    margin-left: 40px;
+  .scerchbar{
+    width: 100%;
+    animation:none;
+    opacity: 1;
+    margin-left: -10px;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 0px;
+  }
+  button{
+    width: 130px;
+    height: 40px;
+    margin-top: 30px;
+    background-image: linear-gradient(to right, rgb(0, 0, 50), aqua);
+    border-radius: 15px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 50px;
   }
   .btn1{
+    margin-left: 80px;
     animation: none;
-    opacity: 1;
-    margin-left: -80px;
   }
   .btn2{
-    animation: none;
-    opacity: 1;
+    margin-right: 50px;
+    animation: slideup 1s    ease-in forwards;
   }
-  .footer{
-    width: 100%;
-    height: 100px;
+  button a{
+    text-decoration: none;
+    color: white;
   }
+  
 }

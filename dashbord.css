@@ -95,38 +95,65 @@ input{
 }
 
 @media(max-width : 500px){
-  .navbar{
-    height: 100px;
-    display:flex;
-    flex-direction: column;
-    animation: none;
-    opacity: 1;
-  }
-  .logo{
-    font-size: 40px;
-    text-align: center;
-    animation: none;
-    opacity: 1;
-  }
-  .menubar{
-    width: 100%;
+  .navbar {
+    height: 120px;
+    background-image: linear-gradient(to right, rgb(0, 0, 50), aqua);
     display: flex;
-    justify-content: space-evenly;
-    padding: 20px;
-    text-shadow: (0px 0px 10px white);
-    animation: none;
-    margin-top: -15px;
-  }
-  .menubar a{
-    animation: none;
-    opacity: 1;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
+    flex-direction: column;
+  }
+  .upper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .user{
+    margin-left: 100px;
+    margin-right: -100px;
+    font-weight: 800;
+  }
+  .user a,
+  .user i{
+    text-decoration: none;
+    color: black;
+  }
+  .logo {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    margin-left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    animation: none;
+  }
+  
+  .menubar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10px;
+  }
+  
+  .menubar a {
+    color: rgb(0, 6, 39);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bolder;
+    opacity: 1;
+    margin-left: 20px;
+    margin-top: -40px;
+    animation: none;
   }
   #a1{
     margin-left: 25px;
   }
   .card{
-    margin-top: 200px;
+    margin-top: -50px;
   }
   .footer{
     width: 100%;
